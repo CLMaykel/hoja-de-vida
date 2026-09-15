@@ -1,0 +1,118 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente estándar y legible como en la imagen */
+    color: #000000; /* Texto color negro sólido */
+    margin: 0;
+    padding: 30px;
+    background-color: #ffffff; /* Fondo blanco puro */
+    line-height: 1.5;
+}
+
+/* Contenedor principal que centra el contenido */
+.cv-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cabecera */
+.cv-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cv-header h1 {
+    font-size: 16px; /* Título pequeño y en mayúsculas */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.profile-img-container {
+    margin-top: 10px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    /* La imagen de referencia tiene una foto rectangular con marcos y sombras */
+    /* Para que se vea IGUAL, le quitamos el borde redondeado y la sombra de la versión anterior */
+    border-radius: 0; 
+    box-shadow: none;
+}
+
+/* Títulos de sección con fondo gris oscuro */
+.dark-grey-header {
+    background-color: #808080; /* Gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 5px 15px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cv-section {
+    margin-bottom: 20px;
+}
+
+/* Cuadrícula para Datos Personales (logra el efecto de dos columnas) */
+.data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Columna de etiquetas más angosta, columna de valores más ancha */
+    gap: 6px 15px; /* Espacio entre filas y columnas */
+    font-size: 14px;
+}
+
+.data-label {
+    font-weight: bold; /* Etiquetas en negrita */
+    text-align: left;
+}
+
+.data-value {
+    text-align: left;
+}
+
+/* Bloques de texto estándar */
+.content-block {
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Estilo de los ítems de Formación Académica */
+.education-item {
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.institution-title {
+    margin: 0;
+}
+
+.date-year {
+    margin: 0;
+}
+
+/* Estilo del botón de Git (adaptado discretamente al diseño) */
+.text-center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.git-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #555555;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.git-link:hover { background-color: #333; }
